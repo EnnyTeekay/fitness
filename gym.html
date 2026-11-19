@@ -1,0 +1,1312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" as="image" href="images/sweats-logo-white.png" />
+    <link rel="preload" as="image" href="images/gym-hero.jpg" />
+    <link rel="preload" as="image" href="images/sweats-icon-lime.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&amp;family=Raleway:wght@500;700;800;900&amp;display=swap"
+      data-precedence="default"
+    />
+    <title>SweatsApp for Gyms — Get Discovered, Fill Your Gym</title>
+    <meta name="author" content="SweatsApp" />
+    <meta
+      name="description"
+      content="Digital memberships, QR check-in, class booking and recurring payments. Gym plans from ₦8,000/month. Join the founding partner waitlist."
+    />
+    <meta property="og:title" content="SweatsApp for Gyms — Fill Your Gym" />
+    <meta
+      property="og:description"
+      content="Grow your gym with new members and simple management tools. Founding partners get 3 months free on the Professional plan."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+  </head>
+  <body>
+    <div class="gym-theme min-h-screen bg-background text-foreground">
+      <header class="site-header fixed inset-x-0 top-0 z-50 px-4 py-4 sm:px-7 sm:py-6">
+        <nav
+          class="mx-auto grid max-w-[96rem] grid-cols-[1fr_auto_1fr] items-center"
+          aria-label="Primary navigation"
+        >
+          <div class="flex items-center gap-3 justify-self-start">
+            <button
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-foreground/15 bg-foreground/5 text-foreground hover:bg-foreground/10 h-9 w-9 nav-trigger rounded-full"
+              aria-label="Open navigation"
+              aria-expanded="false"
+              aria-controls="site-navigation"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-menu"
+                aria-hidden="true"
+              >
+                <path d="M4 5h16"></path>
+                <path d="M4 12h16"></path>
+                <path d="M4 19h16"></path>
+              </svg>
+            </button>
+          </div>
+          <a
+            class="flex items-center justify-self-center"
+            aria-label="SweatsApp home"
+            href="index.html"
+            ><img
+              class="brand-logo brand-logo--header brand-logo--dark"
+              src="images/sweats-logo-white.png"
+              alt="SweatsApp"
+              width="1920"
+              height="919"
+          /></a>
+          <div class="flex items-center gap-3 justify-self-end">
+            <a
+              href="#waitlist"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-full px-4 text-[9px] font-black uppercase sm:px-6"
+              >Join waitlist</a
+            >
+          </div>
+        </nav>
+        <div class="page-switcher" aria-label="Choose your SweatsApp experience">
+          <a class="nav-link" href="index.html">For You</a
+          ><a class="nav-link" href="coach.html">For Coaches</a
+          ><a
+            class="nav-link is-active active"
+            href="gym.html"
+            data-status="active"
+            aria-current="page"
+            >For Gyms</a
+          >
+        </div>
+      </header>
+      <nav
+        class="chapter-nav"
+        aria-label="Page sections"
+        data-sections='[{"id":"gym-intro","label":"Start"},{"id":"gym-focus","label":"Discover"},{"id":"gym-system","label":"Experience"},{"id":"gym-community","label":"How it works"},{"id":"gym-workouts","label":"Workouts"},{"id":"gym-grow","label":"Grow"},{"id":"gym-experience","label":"Why SweatsApp"},{"id":"waitlist","label":"Join"},{"id":"gym-faq","label":"FAQs"}]'
+      >
+        <div class="chapter-nav__bar">
+          <button
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 rounded-full border border-foreground/15 bg-foreground/5 text-foreground hover:bg-foreground/10 h-9 px-4 py-2 chapter-toggle"
+            aria-label="Choose a section"
+            aria-expanded="false"
+            aria-controls="page-chapters"
+          >
+            <span class="chapter-number">01</span><span class="chapter-label">Start</span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chevron-down"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg></button
+          ><a
+            href="#gym-focus"
+            aria-label="Next section: Discover"
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 rounded-full bg-primary text-primary-foreground font-extrabold hover:bg-primary/90 h-9 w-9 chapter-next"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-down"
+              aria-hidden="true"
+            >
+              <path d="M12 5v14"></path>
+              <path d="m19 12-7 7-7-7"></path></svg
+          ></a>
+        </div>
+      </nav>
+      <main>
+        <section id="gym-intro" class="scroll-scene cinematic-intro">
+          <div class="cinematic-title">
+            <h1>Get discovered, Fill your gym</h1>
+            <div class="intro-waitlist">
+              <div class="w-full max-w-lg">
+                <form novalidate="" class="flex w-full flex-col gap-3 sm:flex-row">
+                  <label class="sr-only" for="email-gym-intro">Email address</label
+                  ><input
+                    id="email-gym-intro"
+                    required=""
+                    type="email"
+                    autocomplete="email"
+                    maxlength="254"
+                    aria-invalid="false"
+                    placeholder="Enter your email"
+                    class="h-12 min-h-12 min-w-0 flex-1 shrink-0 rounded-full border border-foreground/15 bg-foreground/5 px-5 text-sm text-foreground outline-none placeholder:text-foreground/40 focus:border-current aria-invalid:border-destructive"
+                    name="email"
+                    value=""
+                  /><button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground font-extrabold hover:bg-primary/90 h-12 rounded-full px-7"
+                    type="submit"
+                  >
+                    Join the waitlist<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-arrow-right"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="hero-frame scroll-media">
+            <img
+              src="images/gym-hero.jpg"
+              alt="Members training together in a modern gym"
+              width="1920"
+              height="1080"
+            />
+          </div>
+          <div class="intro-details">
+            <div class="launch-announcement">
+              <p class="eyebrow">Early access · Lagos, then Abuja</p>
+              <p class="launch-copy">
+                We bring new members to your door and give you simple tools to keep them: digital
+                memberships, QR check-in, class booking and automatic billing. We are the one place
+                you use to manage your entire business efficiently.
+              </p>
+              <a
+                href="#gym-focus"
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground font-extrabold hover:bg-primary/90 h-12 rounded-full px-7"
+                >Explore SweatsApp
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+              ></a>
+            </div>
+          </div>
+        </section>
+        <section id="gym-focus" class="scroll-scene feature-duo bg-paper text-paper-foreground">
+          <div class="feature-duo-pairs">
+            <article>
+              <div class="feature-duo-copy">
+                <p class="eyebrow">Get Discovered</p>
+                <h3>List your gym</h3>
+              </div>
+              <div class="feature-duo-media image-shell">
+                <div class="image-window">
+                  <img src="images/gym-discovered.jpg" alt="List your gym" loading="lazy" />
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="feature-duo-copy">
+                <p class="eyebrow">Get Paid</p>
+                <h3>Manage subscriptions</h3>
+              </div>
+              <div class="feature-duo-media image-shell">
+                <div class="image-window">
+                  <img
+                    src="images/gym-subscriptions.jpg"
+                    alt="Manage subscriptions"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="feature-duo-action">
+            <a
+              href="#waitlist"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground font-extrabold hover:bg-primary/90 h-12 rounded-full px-7"
+              >Join the waitlist
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path></svg
+            ></a>
+          </div>
+        </section>
+        <section
+          id="gym-system"
+          class="scroll-scene story-static"
+          aria-label="SweatsApp experience"
+        >
+          <div class="story-feature-panel">
+            <ol class="story-features" aria-label="Experience features">
+              <li>
+                <span>01</span>Digital Membership<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </li>
+              <li>
+                <span>02</span>Get Discovered<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </li>
+              <li>
+                <span>03</span>Client check-in<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </li>
+              <li>
+                <span>04</span>Class Booking<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </li>
+              <li class="is-default">
+                <span>05</span>Recurring Payments<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </li>
+            </ol>
+          </div>
+          <div class="story-image image-shell">
+            <div class="image-window">
+              <img
+                src="images/gym-membership.jpg"
+                alt="Gym members training as a group"
+                loading="lazy"
+              />
+            </div>
+            <span class="story-heart story-heart--lead" aria-hidden="true"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                aria-hidden="true"
+              >
+                <path
+                  d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+                ></path></svg></span
+            ><span class="story-heart story-heart--echo" aria-hidden="true"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                aria-hidden="true"
+              >
+                <path
+                  d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+                ></path></svg
+            ></span>
+          </div>
+        </section>
+        <section
+          id="gym-community"
+          class="scroll-scene ride-highlight bg-paper text-paper-foreground"
+        >
+          <div class="editorial-heading">
+            <p class="eyebrow">How it works</p>
+            <h2 data-scroll-highlight="true">
+              <span>Class<!-- --> </span><span>booking<!-- --> </span>
+            </h2>
+            <p class="section-description">Build your classes and manage open slots.</p>
+          </div>
+          <div class="wide-media scroll-media">
+            <img src="images/gym-class-booking.jpg" alt="Class booking" loading="lazy" />
+          </div>
+          <div class="feature-ledger">
+            <article>
+              <span>0<!-- -->1</span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-target"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+              <h3>A profile that sells your gym</h3>
+              <p>Show off your gym</p>
+            </article>
+            <article>
+              <span>0<!-- -->2</span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-users"
+                aria-hidden="true"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+              </svg>
+              <h3>Get Discovered</h3>
+              <p>Let new members find you</p>
+            </article>
+            <article>
+              <span>0<!-- -->3</span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-calendar-check"
+                aria-hidden="true"
+              >
+                <path d="M8 2v4"></path>
+                <path d="M16 2v4"></path>
+                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                <path d="M3 10h18"></path>
+                <path d="m9 16 2 2 4-4"></path>
+              </svg>
+              <h3>Know your numbers</h3>
+              <p>Track how well your business is doing</p>
+            </article>
+          </div>
+        </section>
+        <section
+          id="gym-workouts"
+          class="scroll-scene workout-places bg-paper text-paper-foreground"
+          aria-labelledby="gym-workouts-title"
+        >
+          <header class="workout-places-heading">
+            <p class="eyebrow">Movement beyond your walls</p>
+            <h2 id="gym-workouts-title">Group Programs tailored to your members schedules.</h2>
+          </header>
+          <div class="workout-places-grid">
+            <article class="workout-place image-shell workout-place--home">
+              <div class="workout-place-content">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-house"
+                  aria-hidden="true"
+                >
+                  <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                  <path
+                    d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                  ></path>
+                </svg>
+                <h3>At home</h3>
+                <p>Their space. Your pace.</p>
+              </div>
+            </article>
+            <article class="workout-place image-shell workout-place--gym">
+              <div class="workout-place-content">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-dumbbell"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z"
+                  ></path>
+                  <path d="m2.5 21.5 1.4-1.4"></path>
+                  <path d="m20.1 3.9 1.4-1.4"></path>
+                  <path
+                    d="M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z"
+                  ></path>
+                  <path d="m9.6 14.4 4.8-4.8"></path>
+                </svg>
+                <h3>In the gym</h3>
+                <p>Make room for their goals.</p>
+              </div>
+            </article>
+            <article class="workout-place image-shell workout-place--outdoors">
+              <div class="workout-place-content">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-trees"
+                  aria-hidden="true"
+                >
+                  <path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z"></path>
+                  <path d="M7 16v6"></path>
+                  <path d="M13 19v3"></path>
+                  <path
+                    d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5"
+                  ></path>
+                </svg>
+                <h3>Outside</h3>
+                <p>Fresh air. A fresh start.</p>
+              </div>
+            </article>
+            <article class="workout-place image-shell workout-place--travel">
+              <div class="workout-place-content">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-backpack"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"
+                  ></path>
+                  <path d="M8 10h8"></path>
+                  <path d="M8 18h8"></path>
+                  <path d="M8 22v-6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6"></path>
+                  <path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"></path>
+                </svg>
+                <h3>On the move</h3>
+                <p>Members use your routine to move.</p>
+              </div>
+            </article>
+            <article class="workout-place image-shell workout-place--desk">
+              <div class="workout-place-content">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-armchair"
+                  aria-hidden="true"
+                >
+                  <path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path>
+                  <path
+                    d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"
+                  ></path>
+                  <path d="M5 18v2"></path>
+                  <path d="M19 18v2"></path>
+                </svg>
+                <h3>On a break</h3>
+                <p>A little movement counts.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section id="gym-grow" class="scroll-scene discovery-section">
+          <div class="editorial-heading">
+            <p class="eyebrow">Grow your business · Why use SweatsApp?</p>
+            <h2>Fill your gym. Keep your members.</h2>
+          </div>
+          <div class="metric-run">
+            <article>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-target"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+              <h3>Access anywhere</h3>
+              <p>SweatsApp is easily accessible through your mobile phone as well as desktops.</p>
+            </article>
+            <article>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-users"
+                aria-hidden="true"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+              </svg>
+              <h3>Trusted payments</h3>
+              <p>Payments through systems your members already trust.</p>
+            </article>
+            <article>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-calendar-check"
+                aria-hidden="true"
+              >
+                <path d="M8 2v4"></path>
+                <path d="M16 2v4"></path>
+                <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                <path d="M3 10h18"></path>
+                <path d="m9 16 2 2 4-4"></path>
+              </svg>
+              <h3>Local support</h3>
+              <p>Genuine support from a local team who understands your business.</p>
+            </article>
+          </div>
+        </section>
+        <section
+          id="gym-experience"
+          class="scroll-scene experience-split bg-paper text-paper-foreground"
+        >
+          <div class="experience-copy">
+            <p class="eyebrow">Plans from ₦8,000/month</p>
+            <h2>Your business deserves room to grow.</h2>
+            <div class="experience-words">
+              <span>Digital Membership</span><span>Get Discovered</span><span>Client check-in</span
+              ><span>Class Booking</span><span>Recurring Payments</span>
+            </div>
+            <a
+              href="#waitlist"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground font-extrabold hover:bg-primary/90 h-12 rounded-full px-7"
+              >Join the waitlist
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path></svg
+            ></a>
+          </div>
+          <div class="experience-media image-shell">
+            <div class="image-window">
+              <img
+                src="images/gym-plans.jpg"
+                alt="Your business deserves room to grow."
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="waitlist" class="scroll-scene founding-section">
+          <div class="founding-image image-shell">
+            <div class="image-window">
+              <img
+                src="images/gym-founding.jpg"
+                alt="A gym ready to welcome new members"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="founding-copy">
+            <p class="eyebrow">Founding partners</p>
+            <h2>Ready, set, Expand.</h2>
+            <h3>Waitlist gyms get</h3>
+            <ul>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-check"
+                  aria-hidden="true"
+                >
+                  <path d="M20 6 9 17l-5-5"></path></svg
+                >3 months free on the Professional plan
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-check"
+                  aria-hidden="true"
+                >
+                  <path d="M20 6 9 17l-5-5"></path></svg
+                >Free setup: we’ll build your profile and import your members
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-check"
+                  aria-hidden="true"
+                >
+                  <path d="M20 6 9 17l-5-5"></path></svg
+                >A Founding Partner badge in the app
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-check"
+                  aria-hidden="true"
+                >
+                  <path d="M20 6 9 17l-5-5"></path></svg
+                >Featured placement when we launch to users
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-check"
+                  aria-hidden="true"
+                >
+                  <path d="M20 6 9 17l-5-5"></path></svg
+                >A direct line to our product team to shape what we build
+              </li>
+            </ul>
+            <div class="w-full max-w-lg">
+              <form novalidate="" class="flex w-full flex-col gap-3 sm:flex-row">
+                <label class="sr-only" for="email-gym-waitlist">Email address</label
+                ><input
+                  id="email-gym-waitlist"
+                  required=""
+                  type="email"
+                  autocomplete="email"
+                  maxlength="254"
+                  aria-invalid="false"
+                  placeholder="Enter your email"
+                  class="h-12 min-h-12 min-w-0 flex-1 shrink-0 rounded-full border border-foreground/15 bg-foreground/5 px-5 text-sm text-foreground outline-none placeholder:text-foreground/40 focus:border-current aria-invalid:border-destructive"
+                  name="email"
+                  value=""
+                /><button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground font-extrabold hover:bg-primary/90 h-12 rounded-full px-7"
+                  type="submit"
+                >
+                  Join the waitlist<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section id="gym-faq" class="scroll-scene faq-section bg-paper text-paper-foreground">
+          <div class="faq-image image-shell">
+            <div class="image-window">
+              <img src="images/gym-faq-new.jpg" alt="SweatsApp training community" loading="lazy" />
+            </div>
+          </div>
+          <div class="faq-copy">
+            <p class="eyebrow">A little more clarity</p>
+            <h2>FAQs</h2>
+            <details>
+              <summary>
+                How much does SweatsApp cost for gyms?<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-plus"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5v14"></path>
+                </svg>
+              </summary>
+              <p>
+                Plans start from ₦8,000 a month. There’s no long-term contract, and you can change
+                plans any time.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Do you charge for new members you send us?<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-plus"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5v14"></path>
+                </svg>
+              </summary>
+              <p>No. Being listed and discovered on SweatsApp has no per-member fee.</p>
+            </details>
+            <details>
+              <summary>
+                Do I need special equipment for check-in?<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-plus"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5v14"></path>
+                </svg>
+              </summary>
+              <p>
+                No. A phone or tablet at reception can scan member QR codes. NFC readers are
+                optional.
+              </p>
+            </details>
+            <details>
+              <summary>
+                What if our internet goes down?<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-plus"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5v14"></path>
+                </svg>
+              </summary>
+              <p>
+                Check-ins are saved on the device and sync automatically when you’re back online.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Can you move our existing members over?<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-plus"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5v14"></path>
+                </svg>
+              </summary>
+              <p>Yes. Founding partners get free setup, including importing your member list.</p>
+            </details>
+            <details>
+              <summary>
+                Is our member data safe?<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-plus"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5v14"></path>
+                </svg>
+              </summary>
+              <p>
+                Yes. Data is encrypted, payments run through Paystack, and we comply with the
+                Nigeria Data Protection Act 2023. Your data is never shared with other gyms.
+              </p>
+            </details>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <div class="footer-panel bg-paper text-paper-foreground">
+          <div class="footer-main">
+            <div>
+              <a class="footer-brand" aria-label="SweatsApp home" href="index.html"
+                ><img
+                  class="brand-icon"
+                  src="images/sweats-icon-lime.png"
+                  alt="SweatsApp"
+                  width="769"
+                  height="769"
+              /></a>
+              <p>Fitness superapp<br />Built for Nigerians</p>
+            </div>
+            <nav aria-label="Footer navigation">
+              <a href="index.html"
+                >User
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg></a
+              ><a href="coach.html"
+                >Coach
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg></a
+              ><a class="active" href="gym.html" data-status="active" aria-current="page"
+                >Gym
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg></a
+              ><a href="mailto:team@sweats.app"
+                >Contact
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+              ></a>
+            </nav>
+            <div class="footer-signup">
+              <p class="eyebrow">Launch updates</p>
+              <h2>Be the first to know.</h2>
+              <a
+                href="#waitlist"
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 disabled:cursor-not-allowed [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground font-extrabold hover:bg-primary/90 h-12 rounded-full px-7"
+                >Join the waitlist
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-arrow-right"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path></svg
+              ></a>
+            </div>
+          </div>
+          <div class="footer-meta">
+            <p>© 2026 SweatsApp</p>
+            <div>
+              <a
+                href="https://www.instagram.com/sweatsapp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-instagram"
+                  aria-hidden="true"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a
+              ><a
+                href="https://www.tiktok.com/@sweatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                ><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 1 1-2.59-2.6c.27 0 .53.04.77.12V9.77a5.7 5.7 0 1 0 4.91 5.63V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3a4.3 4.3 0 0 1-3.24-1.48Z"
+                  ></path></svg></a
+              ><a href="mailto:team@sweats.app" aria-label="Email"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-mail"
+                  aria-hidden="true"
+                >
+                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-image">
+          <img
+            src="images/gym-membership.jpg"
+            alt="SweatsApp community training together"
+            loading="lazy"
+          />
+          <div>
+            <p>Move better.<br />Together.</p>
+            <span>SweatsApp Lagos · 2026</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <template id="nav-drawer-template"
+      ><div id="site-navigation" class="nav-drawer">
+        <div>
+          <p>Explore SweatsApp</p>
+          <a href="index.html">For You</a><a href="coach.html">For Coaches</a
+          ><a class="active" href="gym.html" data-status="active" aria-current="page">For Gyms</a>
+        </div>
+        <a href="#waitlist">Join the waitlist</a>
+      </div></template
+    ><template id="icon-navOpen"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-x"
+        aria-hidden="true"
+      >
+        <path d="M18 6 6 18"></path>
+        <path d="m6 6 12 12"></path></svg></template
+    ><template id="icon-navClosed"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-menu"
+        aria-hidden="true"
+      >
+        <path d="M4 5h16"></path>
+        <path d="M4 12h16"></path>
+        <path d="M4 19h16"></path></svg></template
+    ><template id="icon-chOpen"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-x"
+        aria-hidden="true"
+      >
+        <path d="M18 6 6 18"></path>
+        <path d="m6 6 12 12"></path></svg></template
+    ><template id="icon-chClosed"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-chevron-down"
+        aria-hidden="true"
+      >
+        <path d="m6 9 6 6 6-6"></path></svg
+    ></template>
+    <script src="js/script.js"></script>
+  </body>
+</html>
